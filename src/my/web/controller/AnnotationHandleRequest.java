@@ -44,7 +44,7 @@ public class AnnotationHandleRequest extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+		this.execute(request,response);
 	}
 
 	/**
@@ -52,7 +52,11 @@ public class AnnotationHandleRequest extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		this.execute(request,response);
+	}
+	
+	public void execute(HttpServletRequest request,HttpServletResponse response){
+		
 	}
 
 }
