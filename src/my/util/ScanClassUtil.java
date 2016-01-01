@@ -30,9 +30,10 @@ public class ScanClassUtil {
 		
 		Enumeration<URL> dirs;
 		try {
-			dirs = Thread.currentThread().getContextClassLoader().getResources(packageName);
+			dirs = Thread.currentThread().getContextClassLoader().getResources(packageDirName);
 			while (dirs.hasMoreElements()) {
 				URL url = dirs.nextElement();
+				System.out.println(url);
 				String protocol=url.getProtocol();
 				
 				if("file".equals(protocol)){
